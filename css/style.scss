@@ -1,15 +1,42 @@
-.carou {
+body,
+html {
+  width: 100%;
+}
+
+#carousel {
   position: relative;
-  width: 500px;
-  height: 200px;
-  overflow: hidden;
-  img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    &:first-child{
-      left: -100%;
+  #carou {
+    margin: auto;
+    background-color: lightblue;
+    position: relative;
+    width: 70vw;
+    height: 300px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      &:first-child {}
     }
   }
-
+  #buttons {
+    position: absolute;
+    top: 5px;
+    left: 15.5vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    input {
+      height: 5%;
+      width: 1%;
+      margin-bottom: 3px;
+      background-color: white;
+      opacity: 0.3;
+      border: none;
+      border-radius: 10px;
+    }
+  }
 }

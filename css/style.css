@@ -1,16 +1,42 @@
-.carou {
+body,
+html {
+  width: 100%;
+}
+
+#carousel {
   position: relative;
-  width: 500px;
-  height: 200px;
+}
+#carousel #carou {
+  margin: auto;
+  background-color: lightblue;
+  position: relative;
+  width: 70vw;
+  height: 300px;
   overflow: hidden;
 }
-.carou img {
+#carousel #carou img {
   position: absolute;
   height: 100%;
   width: 100%;
+  text-align: center;
+  margin: auto;
 }
-.carou img:first-child {
-  left: -100%;
+#carousel #buttons {
+  position: absolute;
+  top: 5px;
+  left: 15.5vw;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+#carousel #buttons input {
+  height: 5%;
+  width: 1%;
+  margin-bottom: 3px;
+  background-color: white;
+  opacity: 0.3;
+  border: none;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

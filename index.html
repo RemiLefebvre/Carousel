@@ -1,70 +1,228 @@
 <!doctype html>
 <html class="no-js" lang="FR">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    </head>
-
-    <body>
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 
-      <div class="carou">
-          <img src="http://www.photo-paysage.com/images_accueil/Plus-belles-photos-de-nature.jpg" alt="paysage">
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/4e/89/ee/4e89ee915789259b5b201abca58f3564.jpg" alt="paysage">
-      </div>
+  <script type="text/javascript">
+    // SIZE OF CAROUSEL
+    setInterval(function() {
+      var carou = document.getElementById("carou");
+      var largeurCarou = carou.clientWidth;
+      var hauteur = largeurCarou / 2;
+      carou.style.height = hauteur + "px";
+    }, 500)
+  </script>
 
-      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
+</head>
 
-      <!-- jQuery library -->
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<body>
 
-      <!-- Tether -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <div id="carousel">
 
-      <!-- Bootstrap 4 Alpha JS -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <div id="carou">
+      <img src="img/planche.jpg" alt="">
+      <img src="http://static.wixstatic.com/media/a89f7c_d71825d227b34b388894e8a096978459~mv2.jpg_srz_800_400_85_22_0.50_1.20_0.00_jpg_srz" alt="">
+      <img src="http://monipag.com/rayaan-guelah/wp-content/uploads/sites/4021/2016/10/le-monde-de-l-inde-et-de-l-asie-circuit-au-japon-de-tokyo-a-kyoto-size-272671-800-400.jpg" alt="">
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-      </script>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFdTkxUM28asKVUNhfa5Pgf7wjuCW5P87dU4vSOXXjXxrxUG9xg" alt="">
+      <img src="http://www.purefood.fr/img/cms/Blog/Titre%201%20(Size%20800-400)%20(13).jpg" alt="">
+      <img src="http://www.purefood.fr/img/cms/Blog/Titre%201%20(Size%20800-400)%20(6)_1.jpg" alt="">
+    </div>
 
-      <!-- Initialize Bootstrap functionality -->
-      <script>
-      // Initialize tooltip component
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-      // Initialize popover component
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
-      </script>
 
-    </body>
+    <div id="buttons">
+      <input tabindex="-1" onclick="returnSlider('0')" type="button" name="" value="">
+      <input tabindex="-1" onclick="returnSlider('1')" type="button" name="" value="">
+      <input tabindex="-1" onclick="returnSlider('2')" type="button" name="" value="">
+      <input tabindex="-1" onclick="returnSlider('3')" type="button" name="" value="">
+      <input tabindex="-1" onclick="returnSlider('4')" type="button" name="" value="">
+      <input tabindex="-1" onclick="returnSlider('5')" type="button" name="" value="">
+
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript">
+    // TRI
+    // TAKE CHILD OF CAROUSEL & BUTTONS
+    var allImgTag = document.getElementById("carou").childNodes;
+    var allButtonsTag = document.getElementById("buttons").childNodes;
+    // PUT ONLY IMG&INPUT
+    var allImg = [];
+    var allButtons=[];
+    for (var i = 0; i < allImgTag.length; i++) {
+      if (i % 2 != 0) {
+        allImg.push(allImgTag[i]);
+        allButtons.push(allButtonsTag[i]);
+
+      }
+    }
+
+
+    // START CAROUSEL
+    var x = allImg.length - 1;
+    var varMoveImg = setInterval(carousel, 5000);
+    buttonLight(x)
+
+    function carousel() {
+      if (x != 0) {
+        console.log("x = " + x);
+        goLeft(x);
+        x--;
+        buttonLight(x)
+      }
+      // LAST IMG CAROUSEL
+      else {
+        returnSlider(allImg.length - 1);
+      }
+    }
+
+    function returnSlider(numbe) {
+      clearInterval (varMoveImg);
+      var n = parseFloat(numbe);
+
+      // GO BACK <<<<<<<<<<<<<<<<<<<
+      if (n > x) {
+        goRight(n);
+        // all img under n go right
+        setTimeout(underMoinsN, 1000)
+
+        function underMoinsN() {
+          for (var i = (n - 1); i >= 1; i--) {
+            allImg[i].style.left = "0%";
+          }
+        }
+      }
+
+      // GO FOWARD >>>>>>>>>>>>>>>>>>
+      if (n < x) {
+        // ALL IMG TOP OF N
+        for (var i = n + 1; i < x; i++) {
+          allImg[i].style.left = "-110%";
+        }
+        goLeft(x);
+      }
+      x = n;
+      buttonLight(x)
+      if (timer==false) {
+        timer=true
+        setTimeout(reStart, 5000);
+        function reStart(){
+        varMoveImg = setInterval(carousel, 5000);
+        timer=false;
+        return this;
+        }
+      }
+    }
+    var timer=false;
+
+
+    // GO RIGHT
+    function goRight(n) {
+      var z = -110;
+      var varMovingLast = setInterval(movingLast, 10)
+
+      function movingLast() {
+        if (z != 0) {
+          z += 2;
+          allImg[n].style.left = z + "%";
+        } else {
+          clearInterval(varMovingLast);
+        }
+      }
+    }
+
+    // GO LEFT
+    function goLeft(n) {
+      var z = 0;
+      var varMovingLast = setInterval(movingLast, 10)
+
+      function movingLast() {
+        if (z != -110) {
+          z -= 2;
+          allImg[n].style.left = z + "%";
+        } else {
+          clearInterval(varMovingLast);
+        }
+      }
+    }
+
+    // BUTTON LIGHT
+    function buttonLight(n){
+      for (var i = 0; i < allButtons.length; i++) {
+        allButtons[i].style.opacity="0.3"
+      }
+      allButtons[n].style.opacity="0.9"
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+  <!-- Tether -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 4 Alpha JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Initialize Bootstrap functionality -->
+  <script>
+    // Initialize tooltip component
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    // Initialize popover component
+    $(function() {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+
+</body>
+
 </html>
